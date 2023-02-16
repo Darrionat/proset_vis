@@ -93,7 +93,7 @@ class Qap {
             return;
         }
         let found = 0;
-        let indexToAdd = Math.floor(Math.random() * emptySquares); // To account for zero
+        let indexToAdd = Math.floor(Math.random() * emptySquares);
 
         for (let i = 1; i < Math.pow(2, this.dim); i++) {
             // Point is either a cap point or an exclude
