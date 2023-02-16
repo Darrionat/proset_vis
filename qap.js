@@ -7,7 +7,7 @@ class Qap {
 
     add(point) {
         if (point == 0)
-            throw new RangeError('Zero not in space');
+            return;
         if (point >= Math.pow(2, this.dim))
             throw new RangeError(`Point too large for dimension ${this.dim}`);
         if (this.excludesCount(point))
